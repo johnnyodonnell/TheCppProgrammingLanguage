@@ -101,5 +101,15 @@ int main() {
     o.incrementAndPrint();
     o7.incrementAndPrint();
     cout << endl;
+
+    /*
+     * This will cause a compile-time error
+     *
+    cout << "Reference to value to reference: " << endl;
+    Obj& o8 = referenceToValue(o);
+    o.incrementAndPrint();
+    o8.incrementAndPrint();
+    cout << endl;
+    */
 }
 
