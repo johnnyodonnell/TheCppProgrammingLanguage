@@ -35,6 +35,7 @@ class Obj {
         void incrementAndPrint() {
             num++;
             cout << "Object id: " << id << endl;
+            cout << "Address: " << this << endl;
             cout << "Call number: " << num << endl;
             cout << endl;
         }
