@@ -45,13 +45,18 @@ Obj valueToValue(Obj o) {
     return o;
 }
 
-// Calling this function will cause a runtime error
+// Will cause warning
 Obj& valueToReference(Obj o) {
     o.incrementAndPrint();
     return o;
 }
 
 Obj& referenceToReference(Obj& o) {
+    o.incrementAndPrint();
+    return o;
+}
+
+Obj referenceToValue(Obj& o) {
     o.incrementAndPrint();
     return o;
 }
@@ -67,16 +72,34 @@ int main() {
     o2.incrementAndPrint();
     cout << endl;
 
-    cout << "Reference to reference to object: " << endl;
-    Obj o3 = referenceToReference(o);
+    cout << "Value to reference to object: " << endl;
+    Obj o3 = valueToReference(o);
     o.incrementAndPrint();
     o3.incrementAndPrint();
     cout << endl;
 
-    cout << "Reference to reference to reference: " << endl;
-    Obj& o4 = referenceToReference(o);
+    cout << "Value to reference to reference: " << endl;
+    Obj& o4 = valueToReference(o);
     o.incrementAndPrint();
-    o4.incrementAndPrint();
+    // o4.incrementAndPrint(); // This will cause a Segmentation Fault
+    cout << endl;
+
+    cout << "Reference to reference to object: " << endl;
+    Obj o5 = referenceToReference(o);
+    o.incrementAndPrint();
+    o5.incrementAndPrint();
+    cout << endl;
+
+    cout << "Reference to reference to reference: " << endl;
+    Obj& o6 = referenceToReference(o);
+    o.incrementAndPrint();
+    o6.incrementAndPrint();
+    cout << endl;
+
+    cout << "Reference to value to object: " << endl;
+    Obj o7 = referenceToValue(o);
+    o.incrementAndPrint();
+    o7.incrementAndPrint();
     cout << endl;
 }
 
