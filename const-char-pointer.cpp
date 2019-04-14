@@ -5,6 +5,8 @@
  * This SO question is helpful to understand this behavior:
  * https://stackoverflow.com/questions/3228664/why-am-i-able-to-change-the-contents-of-const-char-ptr
  *
+ * Also, see p. 187
+ *
  */
 
 using namespace std;
