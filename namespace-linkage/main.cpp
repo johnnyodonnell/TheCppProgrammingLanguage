@@ -8,6 +8,9 @@ namespace Name {
  *
  * See also p. 414. Somehow the example here is able to include C++ headers
  * into a namespace
+ *
+ * Asking for help here:
+ * https://stackoverflow.com/questions/55755236/is-it-possible-to-include-a-namespaced-class-into-another-namespace
  */
 
 int main() {
