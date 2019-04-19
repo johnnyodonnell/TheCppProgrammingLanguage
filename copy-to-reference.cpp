@@ -6,6 +6,10 @@
  *
  * Asked for help:
  * https://stackoverflow.com/questions/55766515/why-does-assignment-to-a-reference-use-the-copy-assignment-operator
+ *
+ * Question that helps answer my question:
+ * https://stackoverflow.com/questions/728233/why-are-references-not-reseatable-in-c/
+ *
  */
 
 using namespace std;
