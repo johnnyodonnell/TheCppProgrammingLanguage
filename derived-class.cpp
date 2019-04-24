@@ -8,6 +8,18 @@
  * object of its base class when manipulated through pointers and
  * references."
  *
+ * Conclusion:
+ * A derived class can be copied into a base class. Here that is exactly
+ * what is happening. Derived d is used as the copy constructor argument
+ * for Base b.
+ *
+ * p. 587 supports this conclusion:
+ * "To get runtime polymorphic behavior in C++, the member functions
+ * called must be virtual and objects must be manipulated through
+ * pointers or references"
+ *
+ * Adding example Base& br, so further illustrate this idea
+ *
  */
 
 using namespace std;
@@ -27,5 +39,8 @@ int main() {
 
     Base b = d;
     b.print();
+
+    Base& br = d;
+    br.print();
 }
 
