@@ -3,6 +3,10 @@
 /*
  * In the final example, Derived d is copied to Base b
  *
+ * From p. 587:
+ * "By default, a function that overrides a virtual function itself becomes
+ * virtual"
+ *
  */
 
 using namespace std;
