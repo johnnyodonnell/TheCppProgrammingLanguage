@@ -24,7 +24,7 @@ class Derived : public Base {
             cout << "print from Derived" << endl;
         }
 
-        virtual void printv() {
+        void printv() {
             cout << "printv from Derived" << endl;
         }
 };
