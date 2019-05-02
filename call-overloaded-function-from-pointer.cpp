@@ -3,7 +3,7 @@
 /*
  * Inspired by comment on p. 930
  *
- * This will fail to compile
+ * Added to after reading p. 968
  *
  */
 
@@ -20,11 +20,13 @@ void func(int, int) {
 template <typename Func>
 void caller(Func func) {
     func(1);
-    func(1, 1);
 }
 
 int main() {
     func(1);
     func(1, 1);
-    caller(func);
+
+    // caller(func); // Compile time error
+    caller((void (*)(int)) func);
 };
+
