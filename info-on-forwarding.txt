@@ -1,0 +1,11 @@
+Important chapters:
+7.7.3
+23.5.2.1
+28.6.3
+35.5.1
+
+SO:
+https://stackoverflow.com/a/8528337/5832619
+
+See example: perferct-fowarding.cpp
+
